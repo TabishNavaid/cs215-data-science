@@ -1,0 +1,29 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Space+Mono&display=swap');
+@import "{{ site.theme }}";
+
+$ink: #2d2c29;
+$grid: rgba(45, 44, 41, 0.07);
+$sketch: unquote("255px 15px 225px 15px / 15px 225px 15px 255px");
+
+body { font-family: "Architects Daughter", system-ui, sans-serif; color: $ink; background-color: #fff; background-image: linear-gradient($grid 1px, transparent 1px), linear-gradient(90deg, $grid 1px, transparent 1px); background-size: 24px 24px; }
+
+.page-header { background: none; color: $ink; text-align: left; max-width: 64rem; margin: 0 auto; padding: 3.5rem 2rem 2rem; border-bottom: 2px solid $ink; }
+.project-name { color: $ink; font-weight: 400; font-size: 2.75rem; margin-bottom: 0.4rem; }
+.project-tagline { color: $ink; font-family: "Space Mono", monospace; font-size: 0.95rem; opacity: 0.75; margin-bottom: 1.25rem; }
+.page-header .btn { color: $ink; background: #fff; border: 2px solid $ink; border-radius: $sketch; font-family: inherit; padding: 0.5rem 1.1rem; }
+.page-header .btn:hover { color: #fff; background: $ink; border-color: $ink; text-decoration: none; }
+
+.main-content { font-size: 1.1rem; line-height: 1.8; }
+.main-content h1, .main-content h2, .main-content h3, .main-content h4 { color: $ink; font-weight: 400; }
+.main-content h2 { margin-top: 2.5rem; padding-bottom: 0.3rem; border-bottom: 2px dashed $ink; }
+.main-content a { color: $ink; text-decoration: underline wavy; text-underline-offset: 4px; }
+.main-content a:hover { background: rgba(45, 44, 41, 0.08); }
+.main-content code, .main-content pre { font-family: "Space Mono", monospace; background: #fff; border: 1.5px solid $ink; border-radius: 4px; color: $ink; }
+.main-content blockquote { color: $ink; border-left: 3px solid $ink; }
+
+.site-footer { border-top: 2px solid $ink; }
+.site-footer-owner, .site-footer-credits { color: $ink; font-family: "Space Mono", monospace; font-size: 0.85rem; }
+.site-footer a { color: $ink; }
